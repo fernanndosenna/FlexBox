@@ -1,0 +1,271 @@
+/*================resete=============*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+nav,ul{
+    list-style: none;
+}
+
+/*===========HEADER============*/
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+header.cabecalho{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+header.cabecalho ul{
+   display: flex;
+   padding: 50px 0px;
+}
+header.cabecalho ul li{
+    margin: 0px 15px;
+    font-size: 1.2rem;
+}
+header.cabecalho ul li:hover{
+    transform: scale(1.2);
+}
+header.cabecalho ul li a{
+    color:  rgb(63, 1, 1);
+}
+header.cabecalho ul li a:hover{
+    color: rgb(136, 136, 136);
+}
+/*=======PRINCIPAL============*/
+section.principal{
+    display: flex;
+  
+    padding: 250px 0px;
+    background-image: url(../img/flight-landscape-nature-sky-36717.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section.principal h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+section.principal h2{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/*============divisoria==============*/
+section.divisoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+section.divisoria h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:  rgb(63, 1, 1);
+}
+section.divisoria p{
+    max-width: 800px;
+    text-align: center;
+    
+}
+section.divisoria hr{
+    margin-top: 50px;
+    width: 200px;
+    height: 2px;
+    background-color: rgb(63, 1, 1);
+    border: none;
+}
+/*=============conteudo=================*/
+section.conteudo{
+    display: flex;
+   background-color: rgb(66, 5, 5);
+   padding: 100px 50px;
+   text-align: center;
+
+}
+section.conteudo ul{
+    display: flex;
+}
+section.conteudo li i{
+    color: salmon;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section.conteudo li h4{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+section.conteudo p{
+    color: #fff;
+    text-align: center;
+}
+@media(max-width:700px){
+    section.conteudo ul{
+        flex-direction: column;
+    }
+    section.conteudo ul li i{
+        margin-top: 30px;
+    }
+}
+/*=====================imagens===========*/
+section.fotos p{
+    font-size: 2rem;
+}
+section.fotos{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px 50px;
+
+}
+section.fotos .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+section.fotos .grid li{
+    height: 310px;
+    list-style: none;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    
+
+}
+section.fotos .grid li.larga{
+    flex-basis: 50%;
+    transition: all .4s ease-in;
+    background-position: 50% 50%;
+    background-size: 700px;
+  
+   
+}
+section.fotos .grid li.larga:hover{
+    transform: scale(1.2);
+    background-position: 0px 0px;
+    background-size: 600px;
+
+}
+section.fotos .grid li.pequena{
+    flex-basis: 40%;
+    transition: all .4s ease-in;
+    background-position: 50% 50%;
+    background-size: 700px;
+}
+section.fotos .grid li.pequena:hover{
+    transform: scale(1.2);
+    background-position: 0px 0px;
+    background-size: 600px;
+
+}
+@media (max-width:800px){
+    section.fotos .grid li.larga,section.fotos .grid li.pequena{
+        flex-basis: 100%;
+  
+
+    }
+}
+/*=========CONTATO===============*/
+section.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    background-color: rgb(66, 5, 5);
+}
+section.contato form{
+    display:flex;
+    width: 80%;
+}
+section.contato form input{
+    padding: 25px;
+    border-radius: 4px;
+    margin-left: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    
+    
+}
+section.contato form .email{
+    flex: 1;
+}
+section.contato form .btn{
+    background-color: rgba(255, 255, 255, 0.767);
+    
+}
+section.contato form .btn:hover{
+    transform: scale(1.1);
+}
+@media (max-width:700px){
+    section.contato form{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    section.contato form .btn{
+        margin-top: 20px;
+    }
+}
+/*==================RODAPE=====================*/
+footer{
+    display: flex;
+    background-color: rgb(25, 25, 26);
+    padding: 100px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+  list-style: none;
+  margin: 0px 15px;
+  margin-bottom: 10px;
+
+}
+footer ul li i{
+    font-size: 3rem;
+    color: #fff;
+}
+footer  p{
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+}
+footer ul li a{
+    color: #fff;
+}
+footer ul li:hover{
+    transform: scale(1.2);
+   
+}
+footer ul li i:hover{
+    color:rgb(206, 206, 206);
+}
+
+
+
+
+
